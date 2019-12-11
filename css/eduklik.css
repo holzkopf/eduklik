@@ -41,8 +41,9 @@ section h5.section-heading{
     overflow: visible;
     border: solid 1px rgba(151, 151, 151, 0.17);
     background-color: #fafafa;
-    margin-left: 10%;
     height: 450px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 @media screen and (max-width: 767px) {
@@ -52,13 +53,14 @@ section h5.section-heading{
     border: solid 1px rgba(151, 151, 151, 0.17);
     background-color: #fafafa;
     margin-left: 0%;
-    height: auto;
+    margin-right: 0%;
+    height: 350px;
   }
 }
 
 .benefit_text_left{
-  padding: 15%;
-  padding-right: 40%;
+  padding: 11%;
+  padding-right: 60%;
 }
 
 @media screen and (max-width: 767px) {
@@ -70,18 +72,21 @@ section h5.section-heading{
 .benefit_blue_right
 {
   box-sizing: border-box;
-  position: relative;
+  position: absolute;
   background-color:  #004e8d;
-  margin-left:-50%;
   bottom: 20%;
+  left: 50%;
   height: 450px;
+  width: 50%;
+  z-index: 1;
   overflow: overflow;
 }
 
 @media screen and (max-width: 1199px) {
   .benefit_blue_right
   {
-      margin-left:-70%;
+      margin-left:-3%;
+      width:53%;
   }
 }
 
@@ -93,6 +98,9 @@ section h5.section-heading{
     background-color:  #004e8d;
     margin-left: auto;
     bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 350px;
     max-height: 75%;
   }
 }
@@ -125,8 +133,8 @@ margin: auto;
 }
 
 .benefit_text_right{
-  padding: 15%;
-  padding-left: 40%;
+  padding: 11%;
+  padding-left: 60%;
 }
 
 @media screen and (max-width: 767px) {
@@ -143,24 +151,20 @@ margin: auto;
 }
 
 @media screen and (max-width: 767px){
-#kolejnosc_skutecznosc_text{
-  order:1;
-}
-#kolejnosc_skutecznosc_obrazek{
-  order:2;
-}
+
 }
 
 
 .benefit_blue_left
 {
+
   box-sizing: border-box;
-  position: relative;
+  position: absolute;
   background-color:  #004e8d;
-  margin-right:-50%;
+  left: -0%;
   bottom: 20%;
   height: 450px;
-  overflow: visible;
+  width: 50%;
   z-index: 1;
 }
 
@@ -179,6 +183,8 @@ margin: auto;
     background-color:  #004e8d;
     margin-left: auto;
     bottom: 0%;
+    width: 100%;
+    height: 350px;
     max-height: 75%;
     margin-right: 0%;
   }
