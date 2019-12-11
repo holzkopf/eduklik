@@ -1,8 +1,15 @@
+body{
+  font-family: 'Lato', sans-serif;
+  color: #4a4a4a;
+}
+
 #intro{
   background-color: #004e8d;
   color: white;
-  font-family: sans-serif;
-  font-weight: bolder;
+}
+
+#intro h1{
+    font-size: 64px;
 }
 
 .navbar-brand > img{
@@ -23,7 +30,11 @@ section{
 
 section h1.section-heading{
   text-align: center;
-  margin-bottom: 10rem;
+  font-size: 64px;
+}
+
+#Prostota h1.section-heading{
+  text-align: left;
 }
 
 section h5.section-heading{
@@ -255,8 +266,6 @@ margin: auto;
 #sprawdz_kurs{
   background-color: #004e8d;
   color: white;
-  font-family: sans-serif;
-  font-weight: bolder;
   margin-bottom: 0px;
   padding-bottom: 5%;
 }
