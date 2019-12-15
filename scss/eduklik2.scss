@@ -1,0 +1,479 @@
+$base_color: #004e8d;
+$background_graybox_color: #fafafa;
+// Font parameters
+$base_font_family: 'Lato';
+$base_font_color: #4a4a4a;
+$font_weight_bold: 900;
+$font_weight_light: 300;
+$paragraph_font_size: 1.2rem;
+
+body{
+  font-family: $base_font_family, sans-serif;
+  font-weight: $font_weight_light;
+  color: $base_font_color;
+}
+
+$h1_font_size: 4rem;
+%section-heading_h1{
+  font-size: $h1_font_size;
+  font-weight: $font_weight_bold;
+
+  @media screen and (max-width: 1199px){
+    font-size: $h1_font_size/1.2;
+  }
+
+  @media screen and (max-width: 999px){
+    font-size: $h1_font_size/1.6;
+  }
+
+  @media screen and (max-width: 767px){
+    font-size: $h1_font_size/1.4;
+  }
+
+  @media screen and (max-width: 575px){
+    font-size: $h1_font_size/2;
+  }
+}
+
+$h5_font_size: 1.5rem;
+%section-heading_h5{
+  font-size: $h5_font_size;
+  font-weight: $font_weight_light;
+
+  @media screen and (max-width: 575px){
+    font-size: $h5_font_size/1.1;
+  }
+}
+
+#Nawigacja{
+  background-color: $base_color;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  .mx-auto{
+    margin-left: 10%!important;
+  }
+
+  .navbar-brand > img{
+    width: 180px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .mx-auto{
+      margin-left: auto!important;
+    }
+
+    .navbar-brand > img{
+      width: 150px;
+    }
+  }
+
+  a{
+    color: white;
+    @extend %section-heading_h5;
+
+    @media screen and (max-width: 999px) {
+      font-size: $h5_font_size/1.3;
+  }
+}
+}
+
+#Sprawdz_navbar{
+  @media screen and (max-width: 767px) {
+  display: none;
+}
+}
+
+$margin_bottom_header: 10%;
+$margin_bottom_header_mobile: 1%;
+/* Intro ***********************************************************/
+#Intro{
+  background-color: $base_color;
+  color: white;
+  margin-bottom: $margin_bottom_header;
+  @extend %jumbotron;
+
+  div{
+    padding: 2%;
+    h1{
+      @extend %section-heading_h1;
+    }
+
+    h5{
+      @extend %section-heading_h5;
+
+      @media screen and (max-width: 999px) {
+        font-size: $h5_font_size/1.3;
+      }
+
+      @media screen and (max-width: 999px) {
+        font-size: $h5_font_size/1.5;
+      }
+
+    }
+  }
+}
+
+%jumbotron{
+  .jumbotron{
+      background-color: transparent !important;
+  }
+}
+/* Intro ************************************************************/
+
+/* Dlaczego *********************************************************/
+#Dlaczego{
+    margin-bottom: $margin_bottom_header;
+    h1{
+      @extend %section-heading_h1;
+      text-align: center;
+      //padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    @media screen and (max-width: 575px) {
+      h1{
+        padding-bottom: 0%;
+      }
+    }
+}
+/* Dlaczego *********************************************************/
+
+/* Prostota *******************************************/
+#Prostota {
+  margin-bottom: $margin_bottom_header;
+  h1 {
+    @extend %section-heading_h1;
+  }
+
+  @extend %benefit_single_right;
+}
+/* Prostota *******************************************/
+
+/* Skuteczność ****************************************/
+#Skutecznosc {
+  margin-bottom: $margin_bottom_header;
+  h1 {
+    @extend %section-heading_h1;
+  }
+
+  @extend %benefit_single_left;
+}
+/* Skuteczność *****************************************/
+
+/* Autonomia ****************************************/
+#Autonomia {
+  margin-bottom: $margin_bottom_header;
+  h1 {
+    @extend %section-heading_h1;
+  }
+
+  @extend %benefit_single_right;
+}
+/* Autonomia *****************************************/
+
+%benefit_single_right{
+  .benefit_single {
+    position: relative;
+
+    .benefit_blue_right {
+      @extend %benefit_blue_right;
+      @extend %benefit_blue_img;
+    }
+
+    .benefit_gray {
+      @extend %benefit_gray;
+
+      .benefit_text_left {
+        @extend %benefit_text_left;
+      }
+    }
+  }
+}
+
+%benefit_single_left{
+  .benefit_single {
+    position: relative;
+
+    .benefit_blue_left {
+      @extend %benefit_blue_left;
+      @extend %benefit_blue_img;
+    }
+
+    .benefit_gray {
+      @extend %benefit_gray;
+
+      .benefit_text_right {
+        @extend %benefit_text_right;
+      }
+    }
+  }
+}
+
+$gray_box_height: 450px;
+$blue_box_height: $gray_box_height;
+
+$gray_box_height_small: 350px;
+$blue_box_height_small: $gray_box_height_small;
+
+$gray_box_height_very_small: 280px;
+$blue_box_height_very_small: $gray_box_height_very_small;
+
+%benefit_blue{
+  box-sizing: border-box;
+  position: absolute;
+  background-color:  $base_color;
+  height: $blue_box_height;
+  width: 50%;
+  z-index: 1;
+  bottom: 20%;
+
+  @media screen and (max-width: 767px) {
+  position: relative;
+  width: 100%;
+  height: $blue_box_height_small;
+  bottom: 0%;
+  }
+
+  @media screen and (max-width: 575px) {
+  position: relative;
+  width: 100%;
+  height: $blue_box_height_very_small;
+  bottom: 0%;
+  }
+}
+%benefit_blue_right{
+  @extend %benefit_blue;
+  left: 50%;
+  overflow: overflow;
+  @media screen and (max-width: 767px) {
+    left: 0%;
+  }
+}
+
+%benefit_blue_left
+{
+  @extend %benefit_blue;
+  left: 0%;
+}
+
+%benefit_blue_img {
+  img {
+    max-height: 100%;
+    max-width: auto;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+$margin_container_fluid: 10%;
+%benefit_gray{
+  position: relative;
+  overflow: visible;
+  border: solid 1px rgba(151, 151, 151, 0.17);
+  background-color: $background_graybox_color;
+  height: $gray_box_height;
+  margin-left: $margin_container_fluid;
+  margin-right: $margin_container_fluid;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0%;
+    margin-right: 0%;
+    height: $gray_box_height_small;
+  }
+
+  @media screen and (max-width: 575px) {
+    margin-left: 0%;
+    margin-right: 0%;
+    height: $gray_box_height_very_small;
+  }
+
+}
+
+%benefit_text{
+  font-size: $paragraph_font_size;
+  padding: 11%;
+
+  @media screen and (max-width: 1199px) {
+    font-size: $paragraph_font_size/1.1;
+  }
+
+  @media screen and (max-width: 999px) {
+    font-size: $paragraph_font_size/1.2;
+  }
+}
+
+$padding_text_near_edge: 60%;
+%benefit_text_left{
+  @extend %benefit_text;
+  padding-right: $padding_text_near_edge;
+
+  @media screen and (max-width: 767px) {
+      padding: 15%;
+  }
+}
+
+%benefit_text_right{
+  @extend %benefit_text;
+  padding-left: $padding_text_near_edge;
+
+  @media screen and (max-width: 767px) {
+      padding: 15%;
+  }
+}
+
+/* Dlaczego *********************************************************/
+
+/* Popularne funkcje ************************************************/
+%margin_functions{
+  margin-top: 12%;
+  margin-bottom: 3%;
+
+  @media screen and (max-width: 575px){
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+
+}
+#Popularne_funkcje{
+  margin-bottom: $margin_bottom_header;
+
+    h1{
+      @extend %section-heading_h1;
+      text-align: center;
+      margin-bottom: $margin_bottom_header;
+    }
+
+    h5{
+      @extend %margin_functions;
+      @extend %section-heading_h5;
+      font-weight: $font_weight_bold;
+    }
+
+    @media screen and (max-width: 575px){
+      .popularne_funkcje_text{
+      padding-bottom: 5%;
+    }
+    }
+}
+/* Popularne funkcje ************************************************/
+
+/* Jak to działa ************************************************/
+#Jak_to_dziala{
+  background-color: $background_graybox_color;
+  padding-top: 7%;
+  padding-bottom: $margin_bottom_header;
+    h1{
+      @extend %section-heading_h1;
+      margin-bottom: $margin_bottom_header;
+      text-align: center;
+    }
+
+    h5{
+      @extend %section-heading_h5;
+      @extend %margin_functions;
+      font-weight: $font_weight_bold;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
+
+@media screen and (max-width: 767px){
+  .funkcje_img{
+    display: block;
+  }
+  img{
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+    @media screen and (max-width: 575px){
+      p{
+        text-align: left;
+      }
+      h5{
+        text-align: left;
+      }
+
+      .funkcje_img{
+        max-width: 20%;
+      }
+      img{
+        max-width: 100%;
+        margin-top:22%;
+        float:left;
+      }
+
+      .jak_to_dziala_text{
+        max-width: 70%;
+        float:right;
+      }
+    }
+}
+/* Jak to działa ************************************************/
+
+/* Sprawdź kurs ************************************************/
+#Sprawdz_kurs{
+
+  background-color: $base_color;
+  color: white;
+  padding: $margin_bottom_header;
+  @extend %jumbotron;
+
+    h1{
+      @extend %section-heading_h1;
+      text-align: center;
+      margin-bottom: 5%;
+    }
+
+    button{
+      padding: 2%;
+    }
+
+}
+/* Sprawdź kurs ************************************************/
+
+/* Kontakt ************************************************/
+#Kontakt{
+
+  background-color: $background_graybox_color;
+  color: $base_color;
+  padding: $margin_bottom_header;
+  @extend %jumbotron;
+
+    h1{
+      @extend %section-heading_h1;
+      text-align: center;
+    }
+}
+/* Kontakt ************************************************/
+
+/* Footer ************************************************/
+
+.footer > img{
+  display: block;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+
+  .footer > img{
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Footer ************************************************/

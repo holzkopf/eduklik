@@ -1,5 +1,6 @@
 body{
   font-family: 'Lato', sans-serif;
+  font-weight: 200;
   color: #4a4a4a;
 }
 
@@ -10,6 +11,11 @@ body{
 
 #intro h1{
     font-size: 64px;
+}
+
+#intro h5.section-heading{
+  text-align: center;
+  font-weight: 300;
 }
 
 .navbar-brand > img{
@@ -31,14 +37,37 @@ section{
 section h1.section-heading{
   text-align: center;
   font-size: 64px;
+  font-weight: 900;
+}
+
+section h1.section-heading-left{
+  text-align: left;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1199px) {
+  body{
+    font-weight: 200;
+    font-size: 16px;
+  }
+  section h1.section-heading{
+    font-size: 48px;
+  }
+  section h1.section-heading-left{
+    font-size: 48px;
+  }
 }
 
 #Prostota h1.section-heading{
   text-align: left;
 }
 
+
 section h5.section-heading{
   text-align: center;
+  font-size: 21px;
+  font-weight: 900;
   margin-bottom: 1rem;
 }
 
