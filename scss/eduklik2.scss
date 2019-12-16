@@ -67,6 +67,11 @@ $h5_font_size: 1.5rem;
     }
   }
 
+  @media screen and (max-width: 575px) {
+    .navbar-brand > img {
+      width: 150px;
+    }
+  }
   a {
     color: white;
     margin-right: 12%;
@@ -105,6 +110,15 @@ $margin_bottom_header_mobile: 1%; /* Intro *************************************
       }
       @media screen and (max-width: 999px) {
         font-size: $h5_font_size/1.5;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      h1 {
+        font-size: $h1_font_size/3;
+      }
+      h5 {
+        font-size: $h5_font_size/2.8;
       }
     }
   }
@@ -452,4 +466,11 @@ $padding_text_near_edge: 60%;
     margin-right: auto;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .footer > img {
+    width: 150px;
+  }
+}
+
 /* Footer ************************************************/
