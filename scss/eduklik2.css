@@ -6,20 +6,13 @@ body {
 
 #Intro div h1, #Dlaczego h1, #Prostota h1, #Skutecznosc h1, #Autonomia h1, #Popularne_funkcje h1, #Jak_to_dziala h1, #Sprawdz_kurs h1, #Kontakt h1 {
   font-size: 4rem;
-  font-family: 'Montserrat';
   font-weight: 900; }
-  @media screen and (max-width: 1450px) {
-    #Intro div h1, #Dlaczego h1, #Prostota h1, #Skutecznosc h1, #Autonomia h1, #Popularne_funkcje h1, #Jak_to_dziala h1, #Sprawdz_kurs h1, #Kontakt h1 {
-      font-size: 3.6363636364rem; } }
-  @media screen and (max-width: 1300px) {
-    #Intro div h1, #Dlaczego h1, #Prostota h1, #Skutecznosc h1, #Autonomia h1, #Popularne_funkcje h1, #Jak_to_dziala h1, #Sprawdz_kurs h1, #Kontakt h1 {
-      font-size: 3.3333333333rem; } }
   @media screen and (max-width: 1199px) {
     #Intro div h1, #Dlaczego h1, #Prostota h1, #Skutecznosc h1, #Autonomia h1, #Popularne_funkcje h1, #Jak_to_dziala h1, #Sprawdz_kurs h1, #Kontakt h1 {
-      font-size: 2.7586206897rem; } }
+      font-size: 3.3333333333rem; } }
   @media screen and (max-width: 999px) {
     #Intro div h1, #Dlaczego h1, #Prostota h1, #Skutecznosc h1, #Autonomia h1, #Popularne_funkcje h1, #Jak_to_dziala h1, #Sprawdz_kurs h1, #Kontakt h1 {
-      font-size: 2.1052631579rem; } }
+      font-size: 2.5rem; } }
   @media screen and (max-width: 767px) {
     #Intro div h1, #Dlaczego h1, #Prostota h1, #Skutecznosc h1, #Autonomia h1, #Popularne_funkcje h1, #Jak_to_dziala h1, #Sprawdz_kurs h1, #Kontakt h1 {
       font-size: 2.8571428571rem; } }
@@ -311,4 +304,4 @@ body {
     margin-right: auto; } }
 /* Footer ************************************************/
 
-/*# sourceMappingURL=eduklik2.min.css.map */
+/*# sourceMappingURL=eduklik2.css.map */

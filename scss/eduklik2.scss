@@ -15,12 +15,21 @@ $h1_font_size: 4rem;
 
 %section-heading_h1 {
   font-size: $h1_font_size;
+  font-family: 'Montserrat';
   font-weight: $font_weight_bold;
-  @media screen and (max-width: 1199px) {
+
+  @media screen and (max-width: 1450px) {
+    font-size: $h1_font_size/1.1;
+  }
+
+  @media screen and (max-width: 1300px) {
     font-size: $h1_font_size/1.2;
   }
+  @media screen and (max-width: 1199px) {
+    font-size: $h1_font_size/1.45;
+  }
   @media screen and (max-width: 999px) {
-    font-size: $h1_font_size/1.6;
+    font-size: $h1_font_size/1.9;
   }
   @media screen and (max-width: 767px) {
     font-size: $h1_font_size/1.4;
