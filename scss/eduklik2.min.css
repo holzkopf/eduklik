@@ -41,21 +41,26 @@ body {
   background-color: #034f8e;
   padding-left: 10%;
   padding-right: 10%; }
+  #Nawigacja .navbar {
+    padding: 0px !important; }
   #Nawigacja .mx-auto {
-    margin-left: 10% !important; }
+    margin-left: unset !important; }
   #Nawigacja .navbar-brand > img {
-    width: 300px; }
+    width: 300px;
+    margin-left: -40px; }
   @media screen and (max-width: 999px) {
     #Nawigacja .mx-auto {
       margin-left: auto !important; }
     #Nawigacja .navbar-brand > img {
-      width: 250px; } }
+      width: 250px;
+      margin-left: 0px; } }
   @media screen and (max-width: 767px) {
     #Nawigacja .navbar-brand > img {
       width: 200px; } }
   #Nawigacja a {
     color: white;
-    margin-right: 12%; }
+    font-family: 'Montserrat';
+    font-size: 1.25rem; }
     @media screen and (max-width: 999px) {
       #Nawigacja a {
         font-size: 1.3636363636rem; } }
@@ -69,19 +74,19 @@ body {
   background-color: #034f8e;
   color: white;
   margin-bottom: 10%; }
-  #Intro div {
-    padding: 2%; }
-    @media screen and (max-width: 999px) {
-      #Intro div h5 {
-        font-size: 1.1538461538rem; } }
-    @media screen and (max-width: 999px) {
-      #Intro div h5 {
-        font-size: 1rem; } }
-    @media screen and (max-width: 575px) {
-      #Intro div h1 {
-        font-size: 1.6rem; }
-      #Intro div h5 {
-        font-size: 0.75rem; } }
+  #Intro .img-fluid {
+    margin-top: -7%; }
+  @media screen and (max-width: 999px) {
+    #Intro div h5 {
+      font-size: 1.1538461538rem; } }
+  @media screen and (max-width: 999px) {
+    #Intro div h5 {
+      font-size: 1rem; } }
+  @media screen and (max-width: 575px) {
+    #Intro div h1 {
+      font-size: 1.6rem; }
+    #Intro div h5 {
+      font-size: 0.75rem; } }
 
 #Intro .jumbotron, #Sprawdz_kurs .jumbotron, #Kontakt .jumbotron {
   background-color: transparent !important; }

@@ -56,12 +56,17 @@ $h5_font_size: 1.5rem;
   padding-left: 10%;
   padding-right: 10%;
 
+.navbar{
+  padding: 0px!important;
+}
+
   .mx-auto {
-    margin-left: 10%!important;
+    margin-left: unset!important;
   }
 
   .navbar-brand > img {
     width: 300px;
+    margin-left: -40px;
   }
   @media screen and (max-width: 999px) {
     .mx-auto {
@@ -70,6 +75,7 @@ $h5_font_size: 1.5rem;
 
     .navbar-brand > img {
       width: 250px;
+      margin-left: 0px;
     }
   }
 
@@ -81,7 +87,8 @@ $h5_font_size: 1.5rem;
 
   a {
     color: white;
-    margin-right: 12%;
+    font-family: 'Montserrat';
+    font-size: $h5_font_size/1.2;
     @extend %section-heading_h5;
     @media screen and (max-width: 999px) {
       font-size: $h5_font_size/1.1;
@@ -103,8 +110,11 @@ $margin_bottom_header_mobile: 1%; /* Intro *************************************
   margin-bottom: $margin_bottom_header;
   @extend %jumbotron;
 
+  .img-fluid{
+    margin-top: -7%;
+  }
+
   div {
-    padding: 2%;
 
     h1 {
       @extend %section-heading_h1;
