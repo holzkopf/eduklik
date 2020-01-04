@@ -6,6 +6,10 @@ $font_weight_bold: 900;
 $font_weight_light: 300;
 $paragraph_font_size: 1.2rem;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $base_font_family, sans-serif;
   font-weight: $font_weight_light;
