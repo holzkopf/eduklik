@@ -111,7 +111,43 @@ $margin_bottom_header_mobile: 1%; /* Intro *************************************
   @extend %jumbotron;
 
   .img-fluid{
-    margin-top: -7%;
+    margin-top: -5%;
+    margin-bottom: 1%;
+    max-width: 50%;
+  }
+
+  @media screen and (max-width: 1400px){
+    .img-fluid{
+      max-width: 65%;
+    }
+  }
+
+  @media screen and (max-width: 1199px){
+    .img-fluid{
+      max-width: 70%;
+      margin-top: -6%;
+    }
+  }
+
+  @media screen and (max-width: 999px){
+    .img-fluid{
+      max-width: 80%;
+      margin-top: -7%;
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    .img-fluid{
+      max-width: 90%;
+      margin-top: -8%;
+    }
+  }
+
+  @media screen and (max-width: 575px){
+    .img-fluid{
+      max-width: 90%;
+      margin-top: -10%;
+    }
   }
 
   div {

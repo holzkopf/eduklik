@@ -75,7 +75,28 @@ body {
   color: white;
   margin-bottom: 10%; }
   #Intro .img-fluid {
-    margin-top: -7%; }
+    margin-top: -5%;
+    margin-bottom: 1%;
+    max-width: 50%; }
+  @media screen and (max-width: 1400px) {
+    #Intro .img-fluid {
+      max-width: 65%; } }
+  @media screen and (max-width: 1199px) {
+    #Intro .img-fluid {
+      max-width: 70%;
+      margin-top: -6%; } }
+  @media screen and (max-width: 999px) {
+    #Intro .img-fluid {
+      max-width: 80%;
+      margin-top: -7%; } }
+  @media screen and (max-width: 767px) {
+    #Intro .img-fluid {
+      max-width: 90%;
+      margin-top: -8%; } }
+  @media screen and (max-width: 575px) {
+    #Intro .img-fluid {
+      max-width: 90%;
+      margin-top: -10%; } }
   @media screen and (max-width: 999px) {
     #Intro div h5 {
       font-size: 1.1538461538rem; } }
